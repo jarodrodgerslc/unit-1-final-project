@@ -1,14 +1,16 @@
-import './App.css'
-import SearchBar from './components/Searchbar/Searchbar'
+import "./App.css";
+import { SearchBar } from "./components/SearchBar";
 
 function App() {
+  return(
 
-  return (
-    <body>
-    
-      <SearchBar />
-    </body>
-  )
+    <div className = "App">
+      <div className ="search-bar-container">
+        <SearchBar />
+        <div>SearchResults</div>
+      </div>
+  </div>
+  );
 }
 
-export default App
+export default App;
